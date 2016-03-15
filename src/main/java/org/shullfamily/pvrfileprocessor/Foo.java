@@ -18,6 +18,7 @@ public class Foo {
     @Produces(MediaType.TEXT_PLAIN)
     public String get() {
         return "\nBar!"
-                + "\nApplication Directory: " + FileSystem.getApplicationDirectory();
+                + "\nApplication directory: " + FileSystem.getApplicationDirectory()
+                + "\nUser home directory: " + FileSystem.getUserHomeDirectory();
     }
 }

@@ -23,4 +23,8 @@ public class FileSystem {
         }
         return null;
     }
+
+    public static File getUserHomeDirectory() {
+        return new File(System.getProperty("user.home"));
+    }
 }
